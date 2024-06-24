@@ -1,0 +1,66 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ffffff;
+    user-select: none;
+}
+@font-face {
+    font-family: Clock-Type-Fonts;
+    src: url(timeclock.ttf) format(truetype);
+}
+/* css global variables */
+:root {
+    --background-color: #000;
+    --heading-color: rgb(247, 161, 3);
+}
+body {
+    display: grid; /* display in grid */
+    place-items: center;
+    background: var(--background-color);
+}
+.content-container {
+    margin: 2vh;
+}
+.content-container .heading {
+    display: grid;
+    place-items: center;
+    margin: 3vh;
+    font-size: 2.16rem;
+}
+.heading p {
+    font-family: monospace;
+    color: var(--heading-color);
+    font-weight: bolder;
+    padding: 6px;
+}
+.content-container .Moon-Phase-Display-Div {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+.content-container .Phase-Info {
+    display: grid;
+    place-items: center;
+    margin: 30px;
+}
+.Phase-Info .phase-of-moon-div {
+    display: grid;
+    place-items: center;
+    margin: 25px;
+}
+.phase-of-moon-div p {
+    font-size: 1.59rem;
+    font-weight: bold;
+}
+.Phase-Info .phase-info-content div {
+    text-align: center;
+    margin: 3px;
+    font-size: 1.3rem;
+}
+.phase-info-content .current-date-and-time-text {
+    font-family: Clock-Type-Fonts;
+    font-size: 1rem;
+    text-shadow: 0px 0px 7px #fff;
+}
